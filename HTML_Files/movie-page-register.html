@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&
+    family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../CSS_Files/movie-page-register-style.css">
+    <link rel="stylesheet" href="../CSS_Files/movie-page-responsive.css">
+    <link rel="stylesheet" href="../CSS_Files/movie-page-buttons.css">
+    <title>MovIMax SIGN-UP Page</title>
+</head>
+
+<body id="body">
+    <header class="main-header">
+        <div id="main-nav" class="container responsive">
+            <a href="http://127.0.0.1:5500/HTML_Files/movie-page-index.html" class="main-header__logo">MovImax</a>
+            <nav class="main-nav">
+                <div class="main-nav__items">
+                    <div class="main-nav__item">
+                        <form method="post">
+                            <input type="text" placeholder="Username" name="username", id="id_username">
+                            <input type="password" placeholder="Password" required="" name="password" id="id_password">
+                            <i class="far fa-eye-slash" id="togglePassword"></i>
+                            <button onclick="document.location='movie-page-admin.html'" type="submit" class="btn btn-secondary">Login</button>
+                        </form>
+                    </div>
+                    <div class="main-nav__item">
+                        <a href="" onclick="displayMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </div>          
+            </nav>
+        </div>
+    </header>
+
+    <main class="signup-page">
+        <div class="container">
+            <form action="movie-page-admin.html" class="signup-form">
+                <label for="firstname">Firstname</label>
+                <input type="text" id="firstname" required maxlength="50">
+                <label for="lastname">Lastname</label>
+                <input type="text" id="firstname" required maxlength="50">
+                <label for="email">Email</label>
+                <input type="text" id="email" required maxlength="50">
+                <label for="password">Password</label>
+                <input type="text" id="password">
+                <label for="gender">Gender</label>
+                <select id="gender" required>
+                    <option value="">Select</option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                    <option value="">Prefer not to say</option>
+                </select>
+                <label class="container-check">
+                    <input type="checkbox" required>
+                    <span class="checkmark"></span>
+                    <a href="">Agree to Terms &amp; Conditions</a>
+                </label>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <ul id="footer-links">
+                        <li><a href="">About</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Forum</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul id="social-links">
+                        <li><a href="https://tr-tr.facebook.com/" class="fab fa-facebook"></a></li>
+                        <li><a href="https://twitter.com/login?lang=tr" class="fab fa-twitter"></a></li>
+                        <li><a href="https://www.instagram.com/?hl=tr&ysclid=lldrgs0f9q735516603" class="fab fa-instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

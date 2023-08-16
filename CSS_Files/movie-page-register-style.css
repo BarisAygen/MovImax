@@ -1,0 +1,249 @@
+:root {
+    --primaryColor: #512B81;
+    --secondaryColor: #8CABFF;
+    --thirdColor: #CD6688;
+    --fourthColor: #FFF0F5;
+    --darkPrimaryColor: #35155D;
+    --darkSecondaryColor: #4477CE;
+    --darkThirdColor: #7A316F;
+    --darkFourthColor: #FFD1DA;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--fourthColor);
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+.main {
+    margin-top: 4rem;
+}
+
+.main-header {
+    background-color: var(--darkPrimaryColor);
+    padding: 0.8rem 1.6rem;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    opacity: 0.9;
+}
+
+.main-header__logo {
+    color: var(--darkFourthColor);
+    text-decoration: none;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.main-nav {
+    display: inline-block;
+    width: calc(100% - 10rem);
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.main-nav__item input {
+    height: 2.2rem;
+    width: 12rem;
+}
+
+.main-nav__item input::placeholder {
+    font-size: 0.9rem;
+}
+
+.main-nav__item i {
+    margin-left: -36px;
+    cursor: pointer;
+    color: black;
+}
+
+.main-nav__item:last-child {
+    display: none;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: var(--darkFourthColor);
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+}
+
+.signup-page {
+    padding-top: 100px;
+}
+
+.signup-form {
+    width: 100%;
+}
+
+.signup-form label,
+.signup-form input:not([type="checkbox"]),
+.signup-form select {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+.signup-form input[type="checkbox"] + label {
+    display: inline-block;
+    width: auto;
+    margin-top: 15px;
+}
+
+.signup-form button[type="submit"] {
+    display: block;
+    margin-top: 15px;
+}
+
+.signup-form input:not([type="checkbox"]),
+.signup-form select {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.signup-form input:not([type="checkbox"]):focus,
+.signup-form select:focus {
+    outline: none;
+    border: 1px solid green;
+}
+
+.container-check {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: var(--darkFourthColor);
+    border: solid 2px var(--thirdColor);
+}
+  
+.container-check:hover input ~ .checkmark {
+    background-color: white;
+}
+  
+.container-check input:checked ~ .checkmark {
+    background-color: var(--thirdColor);
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-check input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.container-check .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+footer {
+    background-color: var(--darkPrimaryColor);
+    padding: 30px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: var(--fourthColor);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#footer-links li {
+    position: relative;
+    top: 25px;
+}
+
+#social-links {
+    text-align: right;
+}
+
+.fab, .fas, .far {
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background-color: #3b5998;
+    color: var(--fourthColor);
+}
+
+.fa-twitter {
+    background-color: #55acee;
+    color: var(--fourthColor);
+}
+
+.fa-instagram {
+    background-color: #125688;
+    color: var(--fourthColor);
+}
