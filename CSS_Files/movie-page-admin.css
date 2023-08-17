@@ -33,23 +33,25 @@ html {
     height: 6rem;
     text-align: center;
     left: 0;
+    top: 0;
 }
 
 .main-header__logo {
     color: var(--darkFourthColor);
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: bold;
     display: inline-block;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     position: relative;
     top: 0.7rem;
+    right: 1rem;
 }
 
 footer {
     background-color: var(--darkPrimaryColor);
-    padding: 30px;
+    padding: 2.5rem;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -58,7 +60,7 @@ footer {
 
 footer a {
     color: var(--fourthColor);
-    font-size: 18px;
+    font-size: 1.5rem;
     text-decoration: none;
 }
 
@@ -70,12 +72,12 @@ footer ul {
 footer ul li {
     list-style-type: none;
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 0.5rem;
 }
 
 #footer-links li {
     position: relative;
-    top: 25px;
+    top: 2rem;
 }
 
 #social-links {
@@ -83,7 +85,7 @@ footer ul li {
 }
 
 .fab, .fas, .far {
-    padding: 10px;
+    padding: 0.6rem;
     border-radius: 50%;
 }
 
