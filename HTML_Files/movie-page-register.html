@@ -11,37 +11,26 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&
     family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="../CSS_Files/movie-page-register-style.css">
-    <link rel="stylesheet" href="../CSS_Files/movie-page-responsive.css">
-    <link rel="stylesheet" href="../CSS_Files/movie-page-buttons.css">
+    <link rel="stylesheet" href="../CSS_Files/movie-page-utils.css">
     <title>MovIMax SIGN-UP Page</title>
 </head>
 
 <body id="body">
-    <header class="main-header">
-        <div id="main-nav" class="container responsive">
-            <a href="http://127.0.0.1:5500/HTML_Files/movie-page-index.html" class="main-header__logo">MovImax</a>
-            <nav class="main-nav">
-                <div class="main-nav__items">
-                    <div class="main-nav__item">
-                        <form method="post">
-                            <input type="text" placeholder="Username" name="username", id="id_username">
-                            <input type="password" placeholder="Password" required="" name="password" id="id_password">
-                            <i class="far fa-eye-slash" id="togglePassword"></i>
-                            <button onclick="document.location='movie-page-admin.html'" type="submit" class="btn btn-secondary">Login</button>
-                        </form>
-                    </div>
-                    <div class="main-nav__item">
-                        <a href="" onclick="displayMenu()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                    </div>
-                </div>          
-            </nav>
-        </div>
+    
+    <header class="main-nav">
+        <a id="main-nav__logo" href="http://127.0.0.1:5500/HTML_Files/movie-page-index.html">MovImax</a>
+        <nav class="main-nav__items">
+            <form method="post">
+                <input type="text" placeholder="Username" name="username", id="id_username">
+                <input type="password" placeholder="Password" required="" name="password" id="id_password">
+                <i class="far fa-eye-slash" id="togglePassword"></i>
+                <button onclick="document.location='movie-page-admin.html'" type="submit" class="btn btn-secondary">Login</button>
+            </form>      
+        </nav>
     </header>
 
-    <main class="signup-page">
-        <div class="container">
+    <main >
+        <div class="signup-page">
             <form action="movie-page-admin.html" class="signup-form">
                 <label for="firstname">Firstname</label>
                 <input type="text" id="firstname" required maxlength="50">
@@ -69,27 +58,36 @@
     </main>
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-2">
-                    <ul id="footer-links">
-                        <li><a href="">About</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Forum</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-2">
-                    <ul id="social-links">
-                        <li><a href="https://tr-tr.facebook.com/" class="fab fa-facebook"></a></li>
-                        <li><a href="https://twitter.com/login?lang=tr" class="fab fa-twitter"></a></li>
-                        <li><a href="https://www.instagram.com/?hl=tr&ysclid=lldrgs0f9q735516603" class="fab fa-instagram"></a></li>
-                    </ul>
-                </div>
+        <div class="footer-row">
+            <div class="col-2">
+                <ul id="footer-links">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Forum</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul id="social-links">
+                    <li><a href="https://tr-tr.facebook.com/" class="fab fa-facebook"></a></li>
+                    <li><a href="https://twitter.com/login?lang=tr" class="fab fa-twitter"></a></li>
+                    <li><a href="https://www.instagram.com/?hl=tr&ysclid=lldrgs0f9q735516603" class="fab fa-instagram"></a></li>
+                </ul>
             </div>
         </div>
     </footer>
 
 </body>
+
+<script>
+    const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#id_password');
+    togglePassword.addEventListener('click', function (e) {
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        this.classList.toggle('fa-eye-slash');
+        this.classList.toggle('fa-eye');
+    });
+</script>
 
 </html>

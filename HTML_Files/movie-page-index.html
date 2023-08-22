@@ -11,35 +11,23 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&
     family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="../CSS_Files/movie-page-index-style.css">
-    <link rel="stylesheet" href="../CSS_Files/movie-page-responsive.css">
-    <link rel="stylesheet" href="../CSS_Files/movie-page-buttons.css">
+    <link rel="stylesheet" href="../CSS_Files/movie-page-utils.css">
     <title>MovIMax</title>
 </head>
 
 <body id="body">
-    <header class="main-header">
-        <div id="main-nav" class="container responsive">
-            <a href="http://127.0.0.1:5500/HTML_Files/movie-page-index.html" class="main-header__logo">MovImax</a>
-            <nav class="main-nav">
-                <div class="main-nav__items">
-                    <div class="main-nav__item">
-                        <form method="post">
-                            <input type="text" placeholder="Username" name="username", id="id_username">
-                            <input type="password" placeholder="Password" required="" name="password" id="id_password">
-                            <i class="far fa-eye-slash" id="togglePassword"></i>
-                            <button onclick="document.location='movie-page-admin.html'" type="submit" class="btn btn-secondary">Login</button>
-                        </form>
-                    </div>
-                    <div class="main-nav__item">
-                        <a href="" onclick="displayMenu()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                    </div>
-                </div>          
-            </nav>
-        </div>
+    <header class="main-nav">
+        <a id="main-nav__logo" href="http://127.0.0.1:5500/HTML_Files/movie-page-index.html">MovImax</a>
+        <nav class="main-nav__items">
+            <form method="post">
+                <input type="text" placeholder="Username" name="username", id="id_username">
+                <input type="password" placeholder="Password" required="" name="password" id="id_password">
+                <i class="far fa-eye-slash" id="togglePassword"></i>
+                <button onclick="document.location='movie-page-admin.html'" type="submit" class="btn btn-secondary">Login</button>
+            </form>      
+        </nav>
     </header>
-
+    
     <main>
         <section id="showcase">
             <div class="content">
@@ -49,108 +37,102 @@
         </section>
         
         <section id="how-it-works">
-            <div class="container">
-                <div class="row">
-                    <h2 class="section-title">How-it-works?</h2>
-                    <p>
-                        We will show you step by step how to start watching your favourite movies & tv shows starting now!
-                    </p>
-                </div>
-                <div class="row">
-                    <a class="icon-box-link" href="http://127.0.0.1:5500/HTML_Files/movie-page-register.html">
-                        <div class="icon-box col-3">
-                            <i class="fas fa-sign-in-alt fa-2x"></i>
-                            <h3>Register</h3>
-                            <p>To watch your favourite movies and TV series register right now!</p>
-                        </div>
-                    </a>
-                    <a class="icon-box-link" href="#plans">
-                        <div class="icon-box col-3">
-                            <i class="fa-solid fa-layer-group"></i>
-                            <h3>Choose a plan</h3>
-                            <p>There is a suitable plan for everyone! Choose the best one for you!</p>
-                        </div>
-                    </a>
-                    <a class="icon-box-link" href="">
-                        <div class="icon-box col-3">
-                            <i class="far fa-smile fa-2x"></i>
-                            <h3>Enjoy MovImax</h3>
-                            <p>The only thing left for you is to lay back and chill. Enjoy the MovImax!</p>
-                        </div>
-                    </a>
-                </div>
+            <div class="how-it-works__row">
+                <h2 class="section-title">How-it-works?</h2>
+                <p>
+                    We will show you step by step how to start watching your favourite movies & tv shows starting now!
+                </p>
+            </div>
+            <div class="how-it-works__row">
+                <a class="icon-box-link" href="http://127.0.0.1:5500/HTML_Files/movie-page-register.html">
+                    <div class="icon-box col-3">
+                        <i class="fas fa-sign-in-alt fa-2x"></i>
+                        <h3>Register</h3>
+                        <p>To watch your favourite movies and TV series register right now!</p>
+                    </div>
+                </a>
+                <a class="icon-box-link" href="#plans">
+                    <div class="icon-box col-3 middle">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h3>Choose a plan</h3>
+                        <p>There is a suitable plan for everyone! Choose the best one for you!</p>
+                    </div>
+                </a>
+                <a class="icon-box-link" href="">
+                    <div class="icon-box col-3">
+                        <i class="far fa-smile fa-2x"></i>
+                        <h3>Enjoy MovImax</h3>
+                        <p>The only thing left for you is to lay back and chill. Enjoy the MovImax!</p>
+                    </div>
+                </a>
             </div>
         </section>
 
         <section id="features">
-            <div class="row">
-                <div class="col-2 features__left"></div>
-                <div class="col-2 features__right">
-                    <h3>Watch all movies & tv shows once they get released!</h3>
-                    <p>Do not waste a second! Start watching your  as soon as they are released.</p>
-                    <button onclick="document.location='movie-page-features.html'" class="btn btn-secondary">View Features</button>
-                </div>
+            <div id="features__left" class="col-2"></div>
+            <div id="features__right" class="col-2">
+                <h3>Watch all movies & tv shows once they get released!</h3>
+                <p>Do not waste a second! Start watching your  as soon as they are released.</p>
+                <button onclick="document.location='" class="btn btn-secondary">View Features</button>
             </div>
         </section>
 
         <section id="plans">
-            <h2 class="section-title">Become a Premium Member</h2>
+            <h1 class="section-title">Become a Premium Member</h1>
             <div class="row">
-                <div class="container clearfix">
-                    <div class="col-3 plan">
-                        <div class="inner-plan">
-                            <h2>Free</h2>
-                            <h3>0/month</h3>
-                            <ul class="plan__features">
-                                <li>HD available</li>
-                                <s><li>4K available</li></s>
-                                <li>Unlimited TV Shows and four movies a month</li>
-                                <s><li>Watch on your phone & Tablet</li></s>
-                                <s><li>Download and watch offline</li></s>
-                                <s><li>Give feedbacks and see people's comments</li></s>
-                            </ul>
-                            <div>
-                                <button onclick="document.location='movie-page-payment.html'" class="btn btn-primary">Choose Plan</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3 plan plan__featured">
-                        <div class="inner-plan recommended-plan">
-                            <h2 class="plan__badge">Recommended</h2>
-                            <h2>Basic</h2>
-                            <h3>9.99$/month</h3>
-                            <ul class="plan__features">
-                                <li>HD available</li>
-                                <s><li>4K available</li></s>
-                                <li>Unlimited TV Shows and twelve movies a month</li>
-                                <li>Watch on your phone & Tablet</li>
-                                <li>Download and watch offline</li>
-                                <s><li>Give feedbacks and see people's comments</li></s>
-                            </ul>
-                            <button onclick="document.location='movie-page-payment.html'" class="btn btn-primary">Choose Plan</button>
-                        </div>
-                    </div>
-                    <div class="col-3 plan">
+                <div class="col-3 plan">
                     <div class="inner-plan">
-                        <h2>Premium</h2>
-                        <h3>19.99$/month</h3>
+                        <h2>Free</h2>
+                        <h3>0/month</h3>
                         <ul class="plan__features">
                             <li>HD available</li>
-                            <li>4K available</li>
-                            <li>Unlimited moviesand TV Shows<li>
+                            <s><li>4K available</li></s>
+                            <li>Unlimited TV Shows and four movies a month</li>
+                            <s><li>Watch on your phone & Tablet</li></s>
+                            <s><li>Download and watch offline</li></s>
+                            <s><li>Give feedbacks and see people's comments</li></s>
+                        </ul>
+                        <div>
+                            <button onclick="document.location=''" class="btn btn-primary">Choose Plan</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 plan plan__featured">
+                    <div class="inner-plan recommended-plan">
+                        <h2 class="plan__badge">Recommended</h2>
+                        <h2>Basic</h2>
+                        <h3>9.99$/month</h3>
+                        <ul class="plan__features">
+                            <li>HD available</li>
+                            <s><li>4K available</li></s>
+                            <li>Unlimited TV Shows and twelve movies a month</li>
                             <li>Watch on your phone & Tablet</li>
                             <li>Download and watch offline</li>
-                            <li>Give feedbacks and see people's comments</li>
+                            <s><li>Give feedbacks and see people's comments</li></s>
                         </ul>
-                        <button onclick="document.location='movie-page-payment.html'" class="btn btn-primary">Choose Plan</button>
-                    </div>    
+                        <button onclick="document.location=''" class="btn btn-primary">Choose Plan</button>
                     </div>
+                </div>
+                <div class="col-3 plan">
+                <div class="inner-plan">
+                    <h2>Premium</h2>
+                    <h3>19.99$/month</h3>
+                    <ul class="plan__features">
+                        <li>HD available</li>
+                        <li>4K available</li>
+                        <li>Unlimited moviesand TV Shows<li>
+                        <li>Watch on your phone & Tablet</li>
+                        <li>Download and watch offline</li>
+                        <li>Give feedbacks and see people's comments</li>
+                    </ul>
+                    <button onclick="document.location='" class="btn btn-primary">Choose Plan</button>
+                </div>    
                 </div>
             </div>
         </section>
 
         <section id="counters">
-            <div class="row counter">
+            <div class="counter">
                 <div class="col-3">
                     <span class="counter__item">974</span>
                     <h4>Movies</h4>
@@ -168,8 +150,7 @@
 
         <section id="movies">
             <h2 class="section-title">This Month's Highest Rated Movies & TV Shows</h2>
-            <div class="container">
-                <div class="row">
+            <div class="card-row">
                 <div class="col-3 card-container">
                     <div class="card">
                         <img class="card-image img-fluid" src="../Pictures/Amelie.jpg" alt="">
@@ -181,7 +162,7 @@
                             <span class="fa fa-star unchecked"></span>
                             <span class="fa fa-star unchecked"></span>
                             <p>
-                                <button onclick="document.location='movie-page-detailed.html'" class="btn btn-primary">Details</button>
+                                <button onclick="document.location=''" class="btn btn-primary">Details</button>
                             </p>
                         </div>
                     </div>
@@ -197,7 +178,7 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <p>
-                                <button onclick="document.location='movie-page-detailed.html'" class="btn btn-primary">Details</button>
+                                <button onclick="document.location=''" class="btn btn-primary">Details</button>
                             </p>
                         </div>
                     </div>
@@ -213,7 +194,7 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star unchecked"></span>
                             <p>
-                                <button onclick="document.location='movie-page-detailed.html'" class="btn btn-primary">Details</button>
+                                <button onclick="document.location=''" class="btn btn-primary">Details</button>
                             </p>
                         </div>
                     </div>
@@ -224,23 +205,21 @@
     </main>
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-2">
-                    <ul id="footer-links">
-                        <li><a href="">About</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Forum</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-2">
-                    <ul id="social-links">
-                        <li><a href="https://tr-tr.facebook.com/" class="fab fa-facebook"></a></li>
-                        <li><a href="https://twitter.com/login?lang=tr" class="fab fa-twitter"></a></li>
-                        <li><a href="https://www.instagram.com/?hl=tr&ysclid=lldrgs0f9q735516603" class="fab fa-instagram"></a></li>
-                    </ul>
-                </div>
+        <div class="footer-row">
+            <div class="col-2">
+                <ul id="footer-links">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Forum</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <ul id="social-links">
+                    <li><a href="https://tr-tr.facebook.com/" class="fab fa-facebook"></a></li>
+                    <li><a href="https://twitter.com/login?lang=tr" class="fab fa-twitter"></a></li>
+                    <li><a href="https://www.instagram.com/?hl=tr&ysclid=lldrgs0f9q735516603" class="fab fa-instagram"></a></li>
+                </ul>
             </div>
         </div>
     </footer>
@@ -260,11 +239,6 @@
         this.classList.toggle('fa-eye-slash');
         this.classList.toggle('fa-eye');
     });
-                            
-    function displayMenu() {
-        var link = document.getElementById("main-nav");
-        link.classList.toggle("responsive");
-    }
 </script>
 
 </html>

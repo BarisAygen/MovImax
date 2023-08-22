@@ -1,0 +1,80 @@
+:root {
+    --primaryColor: #512B81;
+    --secondaryColor: #8CABFF;
+    --thirdColor: #CD6688;
+    --fourthColor: #FFF0F5;
+    --darkPrimaryColor: #35155D;
+    --darkSecondaryColor: #4477CE;
+    --darkThirdColor: #7A316F;
+    --darkFourthColor: #FFD1DA;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', 'sans-serif';
+    font-size: 1.6rem;
+    background-color: var(--fourthColor);
+    line-height: 1.6;
+}
+
+.col-2{
+    float: left;
+    width: 50%;
+}
+
+.col-3{
+    float: left;
+    width: 33.3%;
+    padding: 0 4rem;
+}
+
+.col-4 {
+    float: left;
+    width: 25%;
+}
+
+.btn {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    margin: 1.6rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    transition-duration: .6s;
+}
+
+.btn-primary {
+    background-color: var(--primaryColor);
+    color: var(--fourthColor);
+    border: 0.2rem solid var(--darkFourthColor);
+}
+
+.btn-primary:hover {
+    background-color: var(--darkFourthColor);
+    color: var(--primaryColor);
+    border: 0.2rem solid  var(--primaryColor);
+}
+
+.btn-secondary {
+    background-color: var(--darkThirdColor);
+    color: var(--fourthColor);
+    border: 0.2rem solid var(--fourthColor);
+}
+
+.btn-secondary:hover {
+    background-color: var(--fourthColor);
+    color: var(--darkThirdColor);
+    border: 0.2rem solid var(--darkThirdColor);
+}
