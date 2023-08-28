@@ -1,0 +1,170 @@
+ul {
+    list-style: none;
+}
+
+a {
+    color: var(--PrimaryColor);
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+img {
+    width:  34.99rem;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--darkPrimaryColor);
+    opacity: 0.9;
+    color: var(--fourthColor);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7rem;
+    padding: 0 3rem;
+}
+
+.navbar a {
+    color: var(--fourthColor);
+    padding: 1rem 2rem;
+    margin: 0 0.05rem;
+}
+
+.navbar ul a:hover {
+    border-bottom: 0.2rem solid var(--warning);
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.gallery img:hover {
+    cursor: pointer;
+}
+
+#header-beginning {
+    margin-top: 6.6rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.section-header i {
+    font-size: 2.8rem;
+    margin-top: 2.2rem;
+}
+
+.section-header i:hover {
+    cursor: pointer;
+}
+
+.section-header h2 {
+    font-size: 2.8rem;
+    margin: 2rem 0 0 0;
+    font-weight: bold;
+}
+
+.section-padding {
+    padding: 2rem 2rem 4rem;
+}
+
+.card {
+    font-weight: 700;
+    background-color: var(--darkSecondaryColor);
+}
+
+.card-body {
+    padding: 0.2rem;
+    background-color: var(--darkFourthColor);
+    color: var(--darkPrimaryColor);
+}
+
+.flex-items {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    height: 100%;
+}
+
+.flex-items > div {
+    padding: 1.5rem;
+    flex-basis: 100%;
+}
+
+footer {
+    background-color: var(--darkPrimaryColor);
+    height: 8rem;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: var(--fourthColor);
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 2.5rem;
+    left: 2rem;
+}
+
+#footer-links li {
+    position: relative;
+    top: 2.2rem;
+}
+
+#social-links {
+    text-align: right;
+    position: relative;
+    right: 9rem;
+    top: 2.2rem;
+}
+
+.fab, .fas, .far {
+    padding: 0.8rem;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background-color: #3b5998;
+    color: var(--fourthColor);
+}
+
+.fa-twitter {
+    background-color: #55acee;
+    color: var(--fourthColor);
+}
+
+.fa-instagram {
+    background-color: #125688;
+    color: var(--fourthColor);
+}

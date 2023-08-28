@@ -3,7 +3,7 @@
     position: fixed;
     z-index: 1;
     width: 100%;
-    opacity: 0.9;
+    opacity: 1;
     height: 8rem;
 }
 
@@ -48,8 +48,8 @@
 
 #showcase {
     background-image: linear-gradient(to left, rgba(146, 3, 255, 0.1), rgba(255, 255, 255, 0.1)), 
-    url('../Pictures/mad-max-fury.jpg');
-    background-position: center;
+    url('../Pictures/la-la-land.jpg');
+    background-position: center top +6rem;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;

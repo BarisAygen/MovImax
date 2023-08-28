@@ -1,2 +1,2 @@
 # MovImax
-This is a website which allows you to watch your favourite movies and tv shows.
+This is a website which allows you to watch movies and tv shows.

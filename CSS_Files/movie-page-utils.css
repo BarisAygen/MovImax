@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 :root {
     --primaryColor: #512B81;
     --secondaryColor: #8CABFF;
@@ -7,6 +9,10 @@
     --darkSecondaryColor: #4477CE;
     --darkThirdColor: #7A316F;
     --darkFourthColor: #FFD1DA;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #17a2b8;
+    --success: #28a754;
 }
 
 * {
@@ -25,7 +31,34 @@ body {
     font-size: 1.6rem;
     background-color: var(--fourthColor);
     line-height: 1.6;
+    color: var(--primaryColor);
 }
+
+.text-primary {color: var(--primaryColor);}
+.text-secondary {color: var(--secondaryColor);}
+.text-third {color: var(--thirdColor);}
+.text-fourth {color: var(--fourthColor);}
+.text-darkprimary {color: var(--darkPrimaryColor);}
+.text-darksecondary {color: var(--darkSecondaryColor);}
+.text-darkthird {color: var(--darkThirdColor);}
+.text-darkfourth {color: var(--darkFourthColor);}
+.text-success {color: var(--success);}
+.text-danger {color: var(--danger);}
+.text-warning {color: var(--warning);}
+.text-info {color: var(--info);}
+
+.bg-primary {color: var(--primaryColor);}
+.bg-secondary {color: var(--secondaryColor);}
+.bg-third {color: var(--thirdColor);}
+.bg-fourth {color: var(--fourthColor);}
+.bg-darkprimary {color: var(--darkPrimaryColor);}
+.bg-darksecondary {color: var(--darkSecondaryColor);}
+.bg-darkthird {color: var(--darkThirdColor);}
+.bg-darkfourth {color: var(--darkFourthColor);}
+.bg-success {color: var(--success);}
+.bg-danger {color: var(--danger);}
+.bg-warning {color: var(--warning);}
+.bg-info {color: var(--info);}
 
 .col-2{
     float: left;
@@ -53,6 +86,10 @@ body {
     border: none;
     border-radius: 0.5rem;
     transition-duration: .6s;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
 
 .btn-primary {

@@ -1,0 +1,107 @@
+a {
+    color: var(--PrimaryColor);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 80.5rem;
+    height: 45rem;
+    padding-left: 0.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Varela Round', Sans-Serif;
+    margin: 0.7rem;
+    line-height: 1.3;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--darkPrimaryColor);
+    opacity: 0.9;
+    color: var(--fourthColor);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7rem;
+    padding: 0 3rem;
+}
+
+.navbar a {
+    color: var(--fourthColor);
+    padding: 1rem 2rem;
+    margin: 0 0.05rem;
+}
+
+.navbar ul a:hover {
+    border-bottom: 0.2rem solid var(--warning);
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.general-container {
+    margin-top: 7.5rem;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    grid-gap: 12rem;
+}
+
+.ratings {
+    font-size: 2.8rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.ratings a{
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+#info {
+    height: 50rem;
+}
+
+.info-container p {
+    margin-top: 3rem;
+}
+
+.comment-container {
+    text-align: center;
+    display: grid;
+    grid-gap: 2.5rem;
+    margin-top: 0rem;
+}
+
+.comment {
+    background-color: var(--secondaryColor);
+    padding-bottom: 1rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    display: grid;
+}
+
+.comment h4, .ratings-small {
+    float: left;
+    font-size: 1.3rem;
+}
+
+.ratings-small {
+    margin-left: 0.2rem;
+    margin-top: 0.5rem;
+}
+
+.unchecked {
+    color: var(--darkFourthColor);
+}
+
+.checked {
+    color: var(--darkThirdColor);
+}
